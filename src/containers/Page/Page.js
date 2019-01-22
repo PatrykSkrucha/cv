@@ -3,6 +3,7 @@ import About from '../About/About'
 
 import Nav from '../Navbar/Navbar';
 import Skills from '../Skills/Skills'
+import Footer from '../Footer/Footer'
 
 import classes from './Page.scss';
 
@@ -12,12 +13,11 @@ class Page extends Component {
 		return (
 			<div className={classes.Page} id="up">
 
-				<Nav />
+				{/* <Nav /> */}
 
 				<About />
 				
 				<Skills />
-
 			</div>
 		)
 

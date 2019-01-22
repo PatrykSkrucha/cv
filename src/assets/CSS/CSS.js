@@ -1,9 +1,9 @@
 import React from 'react'
 
-const css = () => (
+const css = (props) => (
 	<svg 
-		width="100px"
-		height="100px"
+		width={props.size}
+		height={props.size}
 		aria-hidden="true"
 		data-prefix="fab" 
 		data-icon="css3" 

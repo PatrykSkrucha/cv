@@ -4,7 +4,7 @@ import pic from '../../assets/photo.jpg'
 
 const photo = () => (
 	<div className={classes.Photo}>
-		<img src={pic} alt="me" />
+		<img src={pic} alt="a picture of me" />
 	</div>
 )
 
