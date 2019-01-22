@@ -18,6 +18,7 @@ class Page extends Component {
 				<About />
 				
 				<Skills />
+				<Footer />
 			</div>
 		)
 
