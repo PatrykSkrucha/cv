@@ -1,3 +1,5 @@
+@import '../../Styles/Styles.scss';
+
 .About{
 	width: 100%;
 	display: flex;
@@ -15,8 +17,7 @@
 		}
 	}
 	h1{
-		width: 100%;
-		background: rgba(76, 175, 80, 0.3);
+		@include h1Styles;
 	}
 }
 
@@ -32,13 +33,18 @@
 		padding: 20px 40px;
 		color: red;
 		line-height: 1.25;
-		
+		word-spacing: 4px;
+		letter-spacing: 1.25px;
 
 	}
 }
 
-@media (min-width: 600px){
+@media (min-width: 820px){
 	.About{
-		flex-direction: column;
+		
+		.Flex_container{
+			flex-direction: row;
+			
+		}
 	}
 }
