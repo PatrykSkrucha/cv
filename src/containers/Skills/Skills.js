@@ -15,11 +15,11 @@ const skills = () => (
 			<div className={classes.Favicons}>
 				<h2>Technologies:</h2>
 				<ul>
-					<li><HTMLico size='80px' /></li>
-					<li><CSSico size='80px' /></li>
-					<li><SASSico size='80px' /></li>
-					<li><JSico size='80px' /></li>
-					<li><REACTico size='80px' /></li>
+					<li><HTMLico size='60px' /></li>
+					<li><CSSico size='60px' /></li>
+					<li><SASSico size='60px' /></li>
+					<li><JSico size='60px' /></li>
+					<li><REACTico size='60px' /></li>
 				</ul>
 			</div>
 			<div className={classes.SoftSkills}>
