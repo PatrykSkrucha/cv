@@ -7,9 +7,9 @@
 	img{
 		padding: 30px;
 		height: 80%;
-		width: 80%;
+		width: 75%;
+		max-width: 300px;
 		border-radius: 50%;
-		max-width: 400px;
 	}
 }
 
@@ -25,11 +25,3 @@
 	}
 }
 
-@media (min-width: 1200px){
-	.Photo{
-		img{
-			height: 100%;
-			width: 100%;
-		}
-	}
-}

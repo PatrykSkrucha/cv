@@ -22,6 +22,7 @@ const skills = () => (
 					<li><REACTico size='60px' /></li>
 				</ul>
 			</div>
+			
 			<div className={classes.SoftSkills}>
 				<p>
 					Enim ullamco quis voluptate ipsum irure veniam sit est labore labore tempor in Lorem. Sunt id laboris ea non enim nulla nisi enim. Quis ex labore minim ex et non excepteur consectetur pariatur ad fugiat sit.

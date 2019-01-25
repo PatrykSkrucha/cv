@@ -36,11 +36,12 @@ class About extends Component {
 					<Photo />
 
 					<div className={classes.SpanInterval}
-						style={{
-							transform: this.state.show ? 'translateX(0)' : 'translateX(+100vh)',
-							opacity: this.state.show ? '1' : '0',
-							transition: 'transform .7s'
-						}}>
+						//style={{
+						//	transform: this.state.show ? 'translateX(0)' : 'translateX(+100vh)',
+						//	opacity: this.state.show ? '1' : '0',
+						//	transition: 'transform .7s'
+						//	}}
+						>
 						<p>In cupidatat nulla incididunt sint ullamco non esse dolore qui. Magna eu adipisicing id mollit commodo incididunt officia incididunt sint labore excepteur. Cillum proident aliquip exercitatio</p>
 					</div>
 				</div>

@@ -5,13 +5,14 @@
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
+	border: 1px solid red;
+
 	background-color: #6a8cc1;
-	box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
 	ul{
 		list-style: none;
-		width: 30%;
 		display: flex;
 		margin-right: 100px;
+		border: 1px solid red;
 		li{
 			margin-right: 10px;
 			a{

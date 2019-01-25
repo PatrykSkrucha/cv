@@ -13,7 +13,7 @@ class Page extends Component {
 		return (
 			<div className={classes.Page} id="up">
 
-				{/* <Nav /> */}
+				<Nav />
 
 				<About />
 				
