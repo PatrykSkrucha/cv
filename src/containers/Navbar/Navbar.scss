@@ -1,3 +1,5 @@
+@import '../../Styles/Styles.scss';
+
 .Navbar{ 
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	width: 100%;
@@ -48,17 +50,14 @@
 				margin-left: 10px;
 				padding: 0 1px;
 				background: black;
-		}
+			}
 		&:last-child::after{
 			display: none;
 		}
+		}
+	
+	
 	}
-	
-	
-}
-
-
-
 }
 .NavbarMoved{
 	background-color: #6a8cc1;
