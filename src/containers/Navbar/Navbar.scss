@@ -6,7 +6,7 @@
 	align-items: center;
 	justify-content: flex-end;
 
-	background-color: #6a8cc1;
+	background-color: inherit;
 	ul{
 		list-style: none;
 		display: flex;
@@ -60,7 +60,9 @@
 
 
 }
-
+.NavbarMoved{
+	background-color: #6a8cc1;
+}
 
 @media(max-width: 600px){
 	.Navbar{

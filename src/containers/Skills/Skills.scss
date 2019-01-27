@@ -6,7 +6,7 @@
 	height: 100%;
 	flex-direction: column;
 	flex-basis: 100%;
-	border: 1px solid red;
+	// border: 1px solid red;
 	flex: row wrap;
 	h1{
 		@include h1Styles;
@@ -36,7 +36,7 @@
 	}
 }
 
-@media (min-width: 820px){
+@media (min-width: 736px){
 	.Favicons{
 		border: 1px solid blue;
 		ul{

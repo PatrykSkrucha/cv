@@ -9,19 +9,18 @@ import classes from './Page.scss';
 
 class Page extends Component {
 	
+
 	render() {
 		return (
-			<div className={classes.Page} id="up">
+			<div  className={classes.Page}>
 
 				<Nav />
 				<Intro />
 				<About />
-				
 				<Skills />
 				<Footer />
 			</div>
 		)
-
 	}
 }
 export default Page;

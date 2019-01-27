@@ -2,8 +2,7 @@
 
 .About{
 	width: 100%;
-	height: 100%;
-	overflow-y: hidden;
+	height: 100vh;
 	display: flex;
 	flex-direction: column;
 	.Flex_container{
@@ -39,7 +38,7 @@
 	}
 }
 
-@media (min-width: 820px){
+@media (min-width: 736px){
 	.About{
 		
 		.Flex_container{
