@@ -1,9 +1,9 @@
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react'
 import Headroom from 'react-headroom';
 
 import classes from './Navbar.scss'
 
-class Navbar extends Component {
+class Navbar extends PureComponent {
 
 	state = {
 		isTop: true,
@@ -11,25 +11,37 @@ class Navbar extends Component {
 
 	componentDidMount(){
 		document.addEventListener(`scroll`,()=>{
-			const scrollPosition = window.scrollY < 50;
-			if(scrollPosition !== this.state.isTop){
-				this.setState((prevState) => ({isTop: !prevState.isTop}))
+			// const scrollPosition = window.scrollY < 50;
+			if(window.scrollY>100){
+				// this.setState((prevState) => ({isTop: !prevState.isTop}))
+				this.setState({isTop: false})
+			}
+			else{
+				this.setState({isTop: true})
 			}
 		})
 	}
 
+	
+
 	render() {
 		return (
 
-			<Headroom>
+			<Headroom >
+				<nav className={classes.Navbar}
+				style={{
+					'backgroundColor': this.state.isTop ? 'transparent' : '#9297a0',
+					'position': this.state.isTop? 'fixed' : 'static',
+					'justifyContent': this.state.isTop? 'flex-start' : 'flex-end',
 
-				<nav className={this.state.isTop ? classes.Navbar : classes.NavbarMoved}>
+				}}
+				>
 					<ul>
 						<li>
 							<a href="#about">About</a>
 						</li>
 						<li>
-							<a href="#two">Skills</a>
+							<a href="#skills">Skills</a>
 						</li>
 						<li>
 							<a href="#">Contact</a>

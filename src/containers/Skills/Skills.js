@@ -7,19 +7,19 @@ import REACTico from '../../assets/React/react-brands';
 import SASSico from '../../assets/Sass/sass-brands'
 
 const skills = () => (
-	<div className={classes.Skills}>
+	<div className={classes.Skills} id="skills">
 		<h1>Skills</h1>
 
 		<div className={classes.Flex_container}>
 		
 			<div className={classes.Favicons}>
-				<h2>Technologies:</h2>
+				<h2>Technologies I know:</h2>
 				<ul>
-					<li><HTMLico size='60px' /></li>
-					<li><CSSico size='60px' /></li>
-					<li><SASSico size='60px' /></li>
-					<li><JSico size='60px' /></li>
-					<li><REACTico size='60px' /></li>
+					<li><HTMLico size='60px' />HTML5</li>
+					<li><CSSico size='60px' />CSS3</li>
+					<li><SASSico size='60px' />SASS</li>
+					<li><JSico size='60px' />JavaScript</li>
+					<li><REACTico size='60px' />ReactJs</li>
 				</ul>
 			</div>
 			

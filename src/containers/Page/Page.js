@@ -9,7 +9,7 @@ import classes from './Page.scss';
 
 class Page extends Component {
 	
-
+	
 	render() {
 		return (
 			<div  className={classes.Page}>
