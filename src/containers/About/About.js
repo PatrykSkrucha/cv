@@ -9,9 +9,7 @@ const about = () => (
 
 			<Photo />
 
-			<div className={classes.SpanInterval}
-
-			>
+			<div className={classes.SpanInterval}>	
 				<p>In cupidatat nulla incididunt sint ullamco non esse dolore qui. Magna eu adipisicing id mollit commodo incididunt officia incididunt sint labore excepteur. Cillum proident aliquip exercitatioIn cupidatat nulla incididunt sint ullamco non esse dolore qui. Magna eu adipisicing id mollit commodo incididunt officia incididunt sint labore excepteur. Cillum proident aliquip exercitatio</p>
 			</div>
 		</div>

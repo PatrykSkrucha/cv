@@ -1,19 +1,17 @@
-import React, { PureComponent } from 'react'
+import React, { Component } from 'react'
 import Headroom from 'react-headroom';
 
 import classes from './Navbar.scss'
 
-class Navbar extends PureComponent {
+class Navbar extends Component {
 
 	state = {
-		isTop: true,
+		isTop: true
 	}
 
 	componentDidMount(){
 		document.addEventListener(`scroll`,()=>{
-			// const scrollPosition = window.scrollY < 50;
-			if(window.scrollY>100){
-				// this.setState((prevState) => ({isTop: !prevState.isTop}))
+			if(window.scrollY>50){
 				this.setState({isTop: false})
 			}
 			else{
@@ -22,16 +20,13 @@ class Navbar extends PureComponent {
 		})
 	}
 
-	
-
 	render() {
 		return (
 
-			<Headroom >
+			<Headroom className={classes.Headroom}>
 				<nav className={classes.Navbar}
 				style={{
 					'backgroundColor': this.state.isTop ? 'transparent' : '#9297a0',
-					'position': this.state.isTop? 'fixed' : 'static',
 					'justifyContent': this.state.isTop? 'flex-start' : 'flex-end',
 
 				}}

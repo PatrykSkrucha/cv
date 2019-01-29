@@ -6,10 +6,11 @@
 	height: 100vh;
 	flex-direction: column;
 	flex-basis: 100%;
-	// border: 1px solid red;
+	background-color: #b8c1b8;
 	flex: row wrap;
 	h1{
 		@include h1Styles;
+		background-color: rgba(57, 124, 56, 1)
 	}
 }
 .Flex_container{
@@ -18,7 +19,9 @@
 	flex-direction: column;
 }
 .Favicons{
-	// border: 1px solid red;
+	h2{
+		margin-bottom: 100px;
+	}
 	ul{
 		// border: 1px solid red;
 		list-style: none;
@@ -34,6 +37,10 @@
 			padding: 5px;
 		}
 	}
+}
+
+.SoftSkills{
+	margin-top: 20px;
 }
 
 @media (min-width: 736px){

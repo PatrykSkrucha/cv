@@ -1,8 +1,10 @@
 .Footer{
 	width: 100%;
-	padding: 5px;
+	padding: 10px 20px;
 	height: auto;
-	background-color: orange;
-	flex-basis: 100%;
-	border: 1px solid blue;
+	display: flex;
+	p{
+		flex-basis: 100%;
+		text-align: left;
+	}
 }
