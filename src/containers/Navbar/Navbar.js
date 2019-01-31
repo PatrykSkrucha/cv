@@ -26,7 +26,7 @@ class Navbar extends Component {
 			<Headroom className={classes.Headroom}>
 				<nav className={classes.Navbar}
 				style={{
-					'backgroundColor': this.state.isTop ? 'transparent' : '#9297a0',
+					'backgroundColor': this.state.isTop ? 'transparent' : 'rgba(146, 151, 160, 0.8)',
 					'justifyContent': this.state.isTop? 'flex-start' : 'flex-end',
 
 				}}
