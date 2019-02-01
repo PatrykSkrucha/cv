@@ -26,13 +26,17 @@
 			letter-spacing: 8px;
 			margin-bottom: 20px;
 			position: relative;
-			animation: text 3s 1 forwards;
+			animation: text 4s 1 forwards;
 		}
 		.Text2{
 			padding-bottom: 10px;
 			opacity: 0;
-			animation: text2 3s 1 forwards;
+			font-size: 20px;
+			animation: text2 3.15s 1 forwards;
 		}
+	.Parallax{
+		height: 100%;
+	}
 	}
 
 }
@@ -40,14 +44,19 @@
 @keyframes text{
 	
 	
-	0%{
-		letter-spacing: 15px;
+	20%{
+		letter-spacing: 25px;
 	}
-	30%{
+	45%{
+		letter-spacing: 8px;
+	}
+	55%{
+		padding-top: 40px;
+	}
+	65%{
 		padding-top: 5px;
 	}
-	85%{
-		letter-spacing: 8px;
+	70%{
 		margin-bottom: -40px;
 	}
 	100%{
@@ -58,12 +67,12 @@
 	0%{
 		opacity: 0;
 	}
-	87%{
+	98%{
 		opacity: 0;
 	}
 	100%{
 		opacity: 1;
-		letter-spacing: 4px;
+		letter-spacing: 3px;
 	}
 }
 
