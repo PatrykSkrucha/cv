@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import Headroom from 'react-headroom';
 
 import classes from './Navbar.scss'
 
@@ -22,8 +21,7 @@ class Navbar extends Component {
 
 	render() {
 		return (
-
-			<Headroom className={classes.Headroom}>
+			<>
 				<nav className={classes.Navbar}
 				style={{
 					'backgroundColor': this.state.isTop ? 'transparent' : 'rgba(146, 151, 160, 0.8)',
@@ -43,7 +41,7 @@ class Navbar extends Component {
 						</li>
 					</ul>
 				</nav>
-			</Headroom>
+			</>
 		)
 	}
 }

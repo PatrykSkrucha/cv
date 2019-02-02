@@ -1,4 +1,4 @@
-@import '../../Styles/Styles.scss';
+ @import '../../Styles/Styles.scss';
 
 .Skills{
 	width: 100%;
@@ -10,7 +10,7 @@
 	flex: row wrap;
 	h1{
 		@include h1Styles;
-		background-color: rgba(57, 124, 56, 1)
+		background-color: #0b7f78;
 	}
 }
 .Flex_container{

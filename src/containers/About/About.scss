@@ -9,6 +9,7 @@
 	background-size: cover;
 	.Flex_container{
 		display: flex;
+		margin: 0 15px;
 		flex-direction: column;
 		align-items: center;
 		div{
@@ -29,7 +30,6 @@
 
 	overflow-y: hidden;
 	p{
-		
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -44,11 +44,13 @@
 
 @media (min-width: 736px){
 	.About{
-		background: url('../../assets/milkybig.jpeg');
+		background: url('../../assets/nature_milky.jpeg') fixed no-repeat;
+		background-size: cover;
 		.Flex_container{
 			flex-direction: row;
-			padding-right: 0px;
+			// padding-right: 20px;
 
 		}
 	}
+	
 }
