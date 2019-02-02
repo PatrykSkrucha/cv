@@ -1,6 +1,5 @@
 import React from 'react';
-// import Pic from '../../assets/picture.jpg'
-import classes from './Intro.scss'
+import classes from './Intro.scss';
 
 const intro = () => (
 	<div className={classes.Intro}>
