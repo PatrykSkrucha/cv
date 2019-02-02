@@ -26,6 +26,8 @@ class Navbar extends Component {
 				style={{
 					'backgroundColor': this.state.isTop ? 'transparent' : 'rgba(146, 151, 160, 0.8)',
 					'justifyContent': this.state.isTop? 'flex-start' : 'flex-end',
+					'width': this.state.isTop? 'auto' : '100%',
+					'transition': 'width 3s'
 
 				}}
 				>
