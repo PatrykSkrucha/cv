@@ -1,16 +1,18 @@
  @import '../../Styles/Styles.scss';
 
+
 .Skills{
+	// border: 3px solid red;
 	width: 100%;
 	display: flex;
+	padding-top: 50px;
 	height: 100vh;
 	flex-direction: column;
 	flex-basis: 100%;
-	background-color: #b8c1b8;
+	// background-color: #b8c1b8;
 	flex: row wrap;
 	h1{
 		@include h1Styles;
-		background-color: #0b7f78;
 	}
 }
 .Flex_container{

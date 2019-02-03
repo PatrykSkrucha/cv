@@ -9,7 +9,7 @@
 		z-index: 400;
 		display: flex;
 		align-items: center;
-		transition: background-color .5s linear;
+		// transition: background-color .5s linear;
 	ul{
 		list-style: none;
 		display: flex;
@@ -65,7 +65,7 @@
 
 }
 
-@media(max-width: 600px){
+@media(max-width: 770px){
 	.Navbar{
 		display: none;
 	}

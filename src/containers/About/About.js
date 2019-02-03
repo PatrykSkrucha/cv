@@ -3,7 +3,7 @@ import Photo from '../Photo/Photo'
 import classes from './About.scss';
 
 const about = () => (
-	<div className={classes.About}  id="about">
+	<div className={classes.About} id="about">
 		<h1 className={classes.Header}>About me</h1>
 		<div className={classes.Flex_container} >
 
