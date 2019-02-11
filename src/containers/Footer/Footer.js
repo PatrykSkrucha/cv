@@ -1,5 +1,6 @@
 import React from 'react'
 import classes from './Footer.scss'
+
 const footer = () => (
 	<div className={classes.Footer}>
 		<p>

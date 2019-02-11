@@ -10,7 +10,7 @@ class Navbar extends Component {
 
 	componentDidMount(){
 		document.addEventListener(`scroll`,()=>{
-			if(window.scrollY>50){
+			if(window.scrollY>70){
 				this.setState({isTop: false})
 			}
 			else{
@@ -20,14 +20,14 @@ class Navbar extends Component {
 	}
 
 	render() {
+
+		let navbarClass = this.state.isTop ? classes.Navbar : classes.NavbarFixed
+		
+		
 		return (
 			<>
-				<nav className={classes.Navbar}
-				style={{
-					'backgroundColor': this.state.isTop ? 'transparent' : '#555fc6',
-					'justifyContent': this.state.isTop? 'flex-start' : 'flex-end',
-					'width': this.state.isTop? 'auto' : '100%',
-				}}
+				<nav className={navbarClass}
+				
 				>
 					<ul>
 						<li>

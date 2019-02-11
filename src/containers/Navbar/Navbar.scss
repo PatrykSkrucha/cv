@@ -2,68 +2,25 @@
 
 
 	.Navbar{ 
-		font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-		// width: 100%;
-		height: 50px;
-		position: fixed;
-		z-index: 400;
-		display: flex;
-		align-items: center;
-		// transition: background-color .5s linear;
-	ul{
-		list-style: none;
-		display: flex;
-		margin-right: 100px;
-		li{
-			margin-right: 10px;
-			a{
-				position: relative;
-				text-decoration: none;
-				color: white;
-				font-size: 20px;
-				padding: 5px 10px;
-				transition: .5s;
-				&:hover{
-					color: #e5e6e8;
-				}
-				&:after,&:before{
-					position: absolute;
-					bottom: 0;
-					left: 0;
-					right: 0;
-					margin: auto;
-					width: 0%;
-					content: '.';
-					color: transparent;
-					background: rgb(7, 7, 7);
-					height: 1px;
-					transition: all .6s;
-					
-				}
-				&:hover:after{
-					width: 80%;
-				}
-				
-			}
-			&::after{
-				content: '';
-				margin-left: 10px;
-				padding: 0 1px;
-				background: #fff;
-			}
-			&:last-child::after{
-				display: none;
-			}
-		}
+		background-color: transparent;
+		width: 100%;
+		height: 70px;
+		@include nav;		
+		
+		
+		
 		
 		
 	}
-
-
-
-
+	
+.NavbarFixed{
+	background-color: #212121;
+	height: 50px;
+	width: 100%;
+	@include nav;		
 
 }
+
 
 @media(max-width: 770px){
 	.Navbar{
