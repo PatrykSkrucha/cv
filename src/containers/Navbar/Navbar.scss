@@ -3,7 +3,6 @@
 
 	.Navbar{ 
 		background-color: transparent;
-		width: 100%;
 		height: 70px;
 		@include nav;		
 		
@@ -16,7 +15,6 @@
 .NavbarFixed{
 	background-color: #212121;
 	height: 50px;
-	width: 100%;
 	@include nav;		
 
 }
