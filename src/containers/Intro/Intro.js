@@ -5,6 +5,10 @@ import { useSpring, useChain, animated } from 'react-spring'
 const intro = () => {
 
 	const containerRef = useRef()
+	const txt1Ref = useRef();
+	const txt2Ref = useRef();
+
+
 	const container = useSpring({
 		from: {opacity: 0},
 		to: {opacity: 1},
@@ -12,28 +16,28 @@ const intro = () => {
 		ref: containerRef,
 	})
 	
-	const txt1Ref = useRef();
 	const txt1 = useSpring({
-		from: {opacity: 0, color: 'white', 'padding-top': '40px'
+		from: {opacity: 0, color: 'white', transform: 'translateY(0px)'
 	},
 		to: async next => {
-			await next ({opacity: 1})
-			await next ({'padding-top': '5px'})
+			await next ({ opacity: 1 })
+			await next ({ transform: 'translateY(-30px)' })
 			
 		},
+		config: { duration: 600 },
 		ref: txt1Ref
 
 	})
 	
-	const txt2Ref = useRef();
 	const txt2= useSpring({
-		from: {opacity: 0, 'padding-top': '0px'},
-		to: { opacity: 1, 'padding-top': '20px'},
+		from: {opacity: 0, transform: 'translateY(0px)' },
+		to: {opacity: 1, transform: 'translateY(20px)' },
+		config: {duration: 200},
 		ref: txt2Ref
 	})
 
 
-	const chain =  useChain([containerRef, txt1Ref, txt2Ref], [0.2,1, 3],)
+	const chain =  useChain([containerRef, txt1Ref, txt2Ref], [0.2, 1 , 2],)
 	
 	
 	return (
