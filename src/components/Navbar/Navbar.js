@@ -23,7 +23,6 @@ class Navbar extends Component {
 
 		let navbarClass = this.state.isTop ? classes.Navbar : classes.NavbarFixed
 		
-		
 		return (
 			<>
 				<nav className={navbarClass}
@@ -37,7 +36,7 @@ class Navbar extends Component {
 							<a href="#skills">Skills</a>
 						</li>
 						<li>
-							<a href="#">Contact</a>
+							<a href="#contact">Contact</a>
 						</li>
 					</ul>
 				</nav>

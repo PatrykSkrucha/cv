@@ -37,7 +37,7 @@ const intro = () => {
 	})
 
 
-	const chain =  useChain([containerRef, txt1Ref, txt2Ref], [0.2, 1 , 2],)
+	useChain([containerRef, txt1Ref, txt2Ref], [0.2, 1 , 2],)
 	
 	
 	return (

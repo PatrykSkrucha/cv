@@ -7,7 +7,7 @@ const css = (props) => (
 		aria-hidden="true"
 		data-prefix="fab" 
 		data-icon="css3" 
-		class="svg-inline--fa 
+		className="svg-inline--fa 
 		fa-css3 fa-w-16" 
 		role="img" 
 		xmlns="http://www.w3.org/2000/svg" 

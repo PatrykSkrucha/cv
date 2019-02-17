@@ -1,12 +1,15 @@
-import React from 'react';
-import classes from './Skills.scss'
+import React, { useState } from 'react';
 import HTMLico from '../../assets/HTML/html5-brands';
 import CSSico from '../../assets/CSS/CSS';
 import JSico from '../../assets/JS/js-brands';
 import REACTico from '../../assets/React/react-brands';
 import SASSico from '../../assets/Sass/sass-brands'
+import classes from './Skills.scss'
+const skills = () => {
 
-const skills = () => (
+
+	
+return (
 	<div className={classes.wrapper}>
 
 		<div className={classes.Skills} id="skills">
@@ -36,5 +39,6 @@ const skills = () => (
 
 	</div>
 )
+}
 
 export default skills;

@@ -1,6 +1,7 @@
-import React, { Component } from 'react';
-import Page from './containers/Page/Page';
-import Hook from './Hook'
+import React, { Component, Suspense } from 'react';
+// import Page from './containers/Page/Page';
+import Spinner from './components/Spinner/Spinner'
+const Page = React.lazy(()=>import('./containers/Page/Page'))
 
 class App extends Component {
 	
@@ -8,7 +9,9 @@ class App extends Component {
 
 		return (
 			<>	
-				<Page />
+				<Suspense fallback={<Spinner />}>
+					<Page />
+				</Suspense>
 				
 			</>
 		);
